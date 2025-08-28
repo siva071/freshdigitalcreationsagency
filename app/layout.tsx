@@ -13,6 +13,7 @@ import { WhatsAppFloat } from "@/components/whatsapp-float"
 import { ErrorBoundary } from "@/components/error-boundary"
 import { siteConfig } from "@/content/site"
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from "@vercel/analytics/next"
 
 const inter = Inter({ 
   subsets: ["latin"],
@@ -113,6 +114,7 @@ export default function RootLayout({
           </ErrorBoundary>
         </ThemeProvider>
         <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   )
