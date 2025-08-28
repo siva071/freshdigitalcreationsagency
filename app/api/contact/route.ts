@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { z } from 'zod'
-import { supabase } from '@/lib/supabase'
+import { getSupabaseClient } from '@/lib/supabase'
 
 // Contact form validation schema
 const contactSchema = z.object({
@@ -79,6 +79,9 @@ export async function POST(request: NextRequest) {
     console.log('📝 Attempting to save to Supabase:', { name, email, phone, service, message })
 
     try {
+      // Get Supabase client
+      const supabase = getSupabaseClient()
+      
       // Test Supabase connection first
       console.log('🔗 Testing Supabase connection...')
       const { error: connectionError } = await supabase.from('contact_submissions').select('count', { count: 'exact', head: true })
