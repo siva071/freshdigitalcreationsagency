@@ -222,14 +222,12 @@ export function HeroSection() {
               {/* Image Container with Border Radius */}
               <div className="relative overflow-hidden rounded-3xl">
                 {/* Image with Enhanced Effects */}
-                <Image
+                <img
                   src="/images/professional-hero-illustration.svg"
                   alt="Professional web development and digital marketing services - Fresh Digital Creations"
                   width={500}
                   height={400}
                   className="w-full h-auto max-w-lg rounded-3xl"
-                  priority
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   style={{
                     filter: 'drop-shadow(0 15px 35px rgba(0, 0, 0, 0.15)) saturate(1.1)'
                   }}
