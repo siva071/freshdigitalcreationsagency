@@ -1,0 +1,133 @@
+<svg width="500" height="400" viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8fafc;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e2e8f0;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="screenGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e293b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#334155;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="orangeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fb923c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f97316;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="purpleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="500" height="400" fill="url(#bgGradient)"/>
+  
+  <!-- Floating elements -->
+  <circle cx="80" cy="60" r="3" fill="#fb923c" opacity="0.6"/>
+  <circle cx="420" cy="80" r="2" fill="#8b5cf6" opacity="0.5"/>
+  <circle cx="450" cy="150" r="2.5" fill="#06b6d4" opacity="0.6"/>
+  <circle cx="50" cy="200" r="2" fill="#10b981" opacity="0.5"/>
+  
+  <!-- Main laptop/computer -->
+  <g transform="translate(150, 120)">
+    <!-- Laptop base -->
+    <rect x="0" y="80" width="200" height="120" rx="8" fill="#e2e8f0" stroke="#cbd5e1" stroke-width="2"/>
+    <rect x="5" y="85" width="190" height="110" rx="4" fill="#f8fafc"/>
+    
+    <!-- Laptop screen -->
+    <rect x="20" y="0" width="160" height="100" rx="6" fill="url(#screenGradient)" stroke="#475569" stroke-width="2"/>
+    <rect x="25" y="5" width="150" height="90" rx="3" fill="#0f172a"/>
+    
+    <!-- Screen content - code lines -->
+    <rect x="30" y="15" width="60" height="3" fill="#06b6d4" opacity="0.8"/>
+    <rect x="30" y="22" width="80" height="3" fill="#10b981" opacity="0.8"/>
+    <rect x="35" y="29" width="70" height="3" fill="#f59e0b" opacity="0.8"/>
+    <rect x="35" y="36" width="90" height="3" fill="#8b5cf6" opacity="0.8"/>
+    <rect x="30" y="43" width="50" height="3" fill="#ef4444" opacity="0.8"/>
+    
+    <!-- Browser window -->
+    <rect x="30" y="55" width="140" height="35" rx="2" fill="#1e293b"/>
+    <circle cx="38" cy="63" r="2" fill="#ef4444"/>
+    <circle cx="46" cy="63" r="2" fill="#f59e0b"/>
+    <circle cx="54" cy="63" r="2" fill="#10b981"/>
+    <rect x="35" y="70" width="100" height="2" fill="#64748b"/>
+    <rect x="35" y="75" width="80" height="2" fill="#64748b"/>
+    <rect x="35" y="80" width="120" height="2" fill="#64748b"/>
+  </g>
+  
+  <!-- Mobile phone -->
+  <g transform="translate(80, 180)">
+    <rect x="0" y="0" width="50" height="90" rx="8" fill="#374151" stroke="#4b5563" stroke-width="2"/>
+    <rect x="3" y="8" width="44" height="74" rx="4" fill="#111827"/>
+    <rect x="6" y="12" width="38" height="20" fill="url(#orangeGradient)" rx="2"/>
+    <rect x="6" y="36" width="38" height="2" fill="#6b7280"/>
+    <rect x="6" y="42" width="30" height="2" fill="#6b7280"/>
+    <rect x="6" y="48" width="35" height="2" fill="#6b7280"/>
+    <circle cx="25" cy="75" r="8" fill="#4b5563" stroke="#6b7280" stroke-width="1"/>
+  </g>
+  
+  <!-- Tablet -->
+  <g transform="translate(320, 200)">
+    <rect x="0" y="0" width="80" height="60" rx="6" fill="#6b7280" stroke="#4b5563" stroke-width="2"/>
+    <rect x="3" y="3" width="74" height="54" rx="3" fill="#111827"/>
+    <rect x="8" y="8" width="64" height="15" fill="url(#purpleGradient)" rx="2"/>
+    <rect x="8" y="28" width="64" height="2" fill="#64748b"/>
+    <rect x="8" y="34" width="50" height="2" fill="#64748b"/>
+    <rect x="8" y="40" width="55" height="2" fill="#64748b"/>
+    <rect x="8" y="46" width="40" height="2" fill="#64748b"/>
+  </g>
+  
+  <!-- Floating icons -->
+  <!-- Gear/Settings icon -->
+  <g transform="translate(380, 100)">
+    <circle cx="0" cy="0" r="12" fill="none" stroke="#8b5cf6" stroke-width="2"/>
+    <circle cx="0" cy="0" r="5" fill="#8b5cf6"/>
+    <rect x="-2" y="-15" width="4" height="6" fill="#8b5cf6"/>
+    <rect x="-2" y="9" width="4" height="6" fill="#8b5cf6"/>
+    <rect x="9" y="-2" width="6" height="4" fill="#8b5cf6"/>
+    <rect x="-15" y="-2" width="6" height="4" fill="#8b5cf6"/>
+  </g>
+  
+  <!-- Chart icon -->
+  <g transform="translate(100, 100)">
+    <rect x="0" y="10" width="4" height="15" fill="#10b981"/>
+    <rect x="6" y="5" width="4" height="20" fill="#06b6d4"/>
+    <rect x="12" y="0" width="4" height="25" fill="#f59e0b"/>
+    <rect x="18" y="8" width="4" height="17" fill="#ef4444"/>
+  </g>
+  
+  <!-- Search icon -->
+  <g transform="translate(400, 300)">
+    <circle cx="0" cy="0" r="8" fill="none" stroke="#fb923c" stroke-width="2"/>
+    <line x1="6" y1="6" x2="12" y2="12" stroke="#fb923c" stroke-width="2"/>
+  </g>
+  
+  <!-- Cloud icon -->
+  <g transform="translate(60, 320)">
+    <ellipse cx="0" cy="0" rx="12" ry="8" fill="#64748b"/>
+    <ellipse cx="-8" cy="-2" rx="8" ry="6" fill="#64748b"/>
+    <ellipse cx="8" cy="-2" rx="8" ry="6" fill="#64748b"/>
+  </g>
+  
+  <!-- Connection lines -->
+  <path d="M 130 220 Q 200 180 270 220" stroke="#e2e8f0" stroke-width="2" fill="none" stroke-dasharray="5,5" opacity="0.6"/>
+  <path d="M 200 280 Q 250 250 320 260" stroke="#e2e8f0" stroke-width="2" fill="none" stroke-dasharray="5,5" opacity="0.6"/>
+  
+  <!-- Decorative elements -->
+  <polygon points="450,50 460,70 440,70" fill="#06b6d4" opacity="0.7"/>
+  <polygon points="30,350 40,370 20,370" fill="#10b981" opacity="0.7"/>
+  
+  <!-- Plus signs -->
+  <g transform="translate(70, 50)">
+    <rect x="-1" y="-6" width="2" height="12" fill="#8b5cf6" opacity="0.6"/>
+    <rect x="-6" y="-1" width="12" height="2" fill="#8b5cf6" opacity="0.6"/>
+  </g>
+  
+  <g transform="translate(430, 250)">
+    <rect x="-1" y="-6" width="2" height="12" fill="#fb923c" opacity="0.6"/>
+    <rect x="-6" y="-1" width="12" height="2" fill="#fb923c" opacity="0.6"/>
+  </g>
+</svg>

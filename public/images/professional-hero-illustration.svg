@@ -1,0 +1,127 @@
+<svg width="500" height="400" viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8fafc;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e2e8f0;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="laptopGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f1f5f9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#cbd5e1;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="screenGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e293b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f172a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="orangeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fb923c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f97316;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="purpleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+    </linearGradient>
+    <filter id="dropShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="500" height="400" fill="url(#bgGradient)"/>
+  
+  <!-- Main laptop computer -->
+  <g transform="translate(180, 100)" filter="url(#dropShadow)">
+    <rect x="0" y="90" width="180" height="100" rx="12" fill="url(#laptopGradient)"/>
+    <rect x="4" y="94" width="172" height="92" rx="8" fill="#f8fafc"/>
+    
+    <!-- Laptop screen -->
+    <rect x="15" y="0" width="150" height="95" rx="8" fill="#374151"/>
+    <rect x="20" y="5" width="140" height="85" rx="4" fill="url(#screenGradient)"/>
+    
+    <!-- VS Code interface -->
+    <rect x="25" y="10" width="130" height="75" rx="2" fill="#1e293b"/>
+    <rect x="25" y="10" width="130" height="12" fill="#334155"/>
+    <circle cx="32" cy="16" r="2" fill="#ef4444"/>
+    <circle cx="40" cy="16" r="2" fill="#f59e0b"/>
+    <circle cx="48" cy="16" r="2" fill="#10b981"/>
+    
+    <!-- Code lines -->
+    <rect x="55" y="28" width="25" height="2" fill="#06b6d4"/>
+    <rect x="55" y="33" width="30" height="2" fill="#10b981"/>
+    <rect x="55" y="38" width="20" height="2" fill="#8b5cf6"/>
+    <rect x="55" y="43" width="35" height="2" fill="#f59e0b"/>
+    <rect x="55" y="48" width="25" height="2" fill="#ef4444"/>
+    
+    <!-- Browser preview -->
+    <rect x="55" y="60" width="90" height="20" rx="2" fill="#f8fafc"/>
+    <rect x="55" y="60" width="90" height="6" fill="url(#orangeGradient)"/>
+  </g>
+  
+  <!-- Smartphone -->
+  <g transform="translate(90, 160)">
+    <rect x="0" y="0" width="45" height="85" rx="12" fill="#1f2937"/>
+    <rect x="3" y="8" width="39" height="69" rx="8" fill="#111827"/>
+    <rect x="6" y="12" width="33" height="18" fill="url(#orangeGradient)" rx="3"/>
+    
+    <!-- App icons -->
+    <rect x="6" y="35" width="7" height="7" fill="#06b6d4" rx="1"/>
+    <rect x="15" y="35" width="7" height="7" fill="#10b981" rx="1"/>
+    <rect x="24" y="35" width="7" height="7" fill="#8b5cf6" rx="1"/>
+    <rect x="33" y="35" width="6" height="7" fill="#f59e0b" rx="1"/>
+  </g>
+  
+  <!-- Tablet -->
+  <g transform="translate(340, 180)">
+    <rect x="0" y="0" width="75" height="55" rx="8" fill="#4b5563"/>
+    <rect x="3" y="3" width="69" height="49" rx="5" fill="#111827"/>
+    <rect x="6" y="6" width="63" height="12" fill="url(#purpleGradient)" rx="2"/>
+    <rect x="6" y="22" width="30" height="8" fill="#374151" rx="1"/>
+    <rect x="39" y="22" width="30" height="8" fill="#374151" rx="1"/>
+  </g>
+  
+  <!-- Service icons -->
+  <g transform="translate(120, 80)">
+    <circle cx="0" cy="0" r="18" fill="#06b6d4"/>
+    <rect x="-8" y="-6" width="16" height="12" rx="2" fill="white"/>
+    <rect x="-6" y="-4" width="12" height="2" fill="#06b6d4"/>
+  </g>
+  
+  <g transform="translate(380, 120)">
+    <circle cx="0" cy="0" r="18" fill="url(#orangeGradient)"/>
+    <rect x="-6" y="2" width="3" height="8" fill="white"/>
+    <rect x="-2" y="-2" width="3" height="12" fill="white"/>
+    <rect x="2" y="-6" width="3" height="16" fill="white"/>
+  </g>
+  
+  <g transform="translate(400, 280)">
+    <circle cx="0" cy="0" r="16" fill="url(#purpleGradient)"/>
+    <circle cx="-2" cy="-2" r="6" fill="none" stroke="white" stroke-width="2"/>
+    <line x1="3" y1="3" x2="8" y2="8" stroke="white" stroke-width="2"/>
+  </g>
+  
+  <g transform="translate(70, 300)">
+    <circle cx="0" cy="0" r="16" fill="#10b981"/>
+    <circle cx="0" cy="0" r="8" fill="none" stroke="white" stroke-width="2"/>
+    <circle cx="0" cy="0" r="3" fill="white"/>
+  </g>
+  
+  <!-- Connection lines -->
+  <path d="M 135 220 Q 200 180 340 220" stroke="#e2e8f0" stroke-width="2" fill="none" stroke-dasharray="8,4" opacity="0.7"/>
+  <path d="M 200 280 Q 280 250 340 260" stroke="#e2e8f0" stroke-width="2" fill="none" stroke-dasharray="8,4" opacity="0.7"/>
+  
+  <!-- Floating elements -->
+  <circle cx="80" cy="60" r="4" fill="#fb923c" opacity="0.7"/>
+  <circle cx="420" cy="80" r="3" fill="#8b5cf6" opacity="0.6"/>
+  <circle cx="450" cy="320" r="3.5" fill="#06b6d4" opacity="0.7"/>
+  <circle cx="50" cy="340" r="2.5" fill="#10b981" opacity="0.6"/>
+  
+  <!-- Plus signs -->
+  <g transform="translate(60, 40)" opacity="0.7">
+    <rect x="-1" y="-8" width="2" height="16" fill="#8b5cf6"/>
+    <rect x="-8" y="-1" width="16" height="2" fill="#8b5cf6"/>
+  </g>
+  
+  <g transform="translate(440, 340)" opacity="0.7">
+    <rect x="-1" y="-8" width="2" height="16" fill="#fb923c"/>
+    <rect x="-8" y="-1" width="16" height="2" fill="#fb923c"/>
+  </g>
+</svg>
