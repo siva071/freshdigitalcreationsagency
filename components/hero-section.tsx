@@ -222,16 +222,24 @@ export function HeroSection() {
               {/* Image Container with Border Radius */}
               <div className="relative overflow-hidden rounded-3xl">
                 {/* Image with Enhanced Effects */}
-                <img
-                  src="/images/professional-hero-illustration.svg"
-                  alt="Professional web development and digital marketing services - Fresh Digital Creations"
-                  width={500}
-                  height={400}
-                  className="w-full h-auto max-w-lg rounded-3xl"
-                  style={{
-                    filter: 'drop-shadow(0 15px 35px rgba(0, 0, 0, 0.15)) saturate(1.1)'
-                  }}
-                />
+                <div className="w-full h-auto max-w-lg rounded-3xl bg-gradient-to-br from-blue-50 to-purple-50 p-8 flex items-center justify-center">
+                  <div className="text-center space-y-4">
+                    <div className="w-24 h-24 mx-auto bg-gradient-to-br from-orange-400 to-purple-600 rounded-2xl flex items-center justify-center">
+                      <svg className="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M3 3h18v18H3V3zm16 16V5H5v14h14zM7 7h10v2H7V7zm0 4h10v2H7v-2zm0 4h7v2H7v-2z"/>
+                      </svg>
+                    </div>
+                    <div className="space-y-2">
+                      <h3 className="text-lg font-bold text-gray-800">Web Development</h3>
+                      <p className="text-sm text-gray-600">Professional digital solutions</p>
+                    </div>
+                    <div className="flex justify-center space-x-2">
+                      <div className="w-3 h-3 bg-orange-400 rounded-full"></div>
+                      <div className="w-3 h-3 bg-purple-500 rounded-full"></div>
+                      <div className="w-3 h-3 bg-blue-500 rounded-full"></div>
+                    </div>
+                  </div>
+                </div>
 
                 {/* Shine Effect */}
                 <motion.div
