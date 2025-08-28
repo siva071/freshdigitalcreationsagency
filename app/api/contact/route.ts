@@ -43,6 +43,15 @@ export async function POST(request: NextRequest) {
   try {
     console.log("🔍 API ROUTE HIT - Starting processing...")
     
+    // Check if Supabase environment variables are available
+    if (!process.env.NEXT_PUBLIC_SUPABASE_URL || !process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY) {
+      console.error("❌ Missing Supabase environment variables")
+      return NextResponse.json(
+        { error: "Server configuration error. Please contact support." },
+        { status: 500 }
+      )
+    }
+    
     // Rate limiting
     const rateLimitKey = getRateLimitKey(request)
     if (!checkRateLimit(rateLimitKey)) {
